@@ -52,10 +52,8 @@ function ajaxcomments_load_js(){
 }
 
 function google_jquery() {
-	if ( ! jQuery ) {
-		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"), false);
-		wp_enqueue_script('jquery'); 
-	}
+	wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"), false);
+	wp_enqueue_script('jquery');
 } 
 
 /* Create PHP Handler ------------------------------------------------------------------[ajaxify_comments()]------- */
